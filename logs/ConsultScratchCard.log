@@ -1,0 +1,561 @@
+[2012Jun28 09:28:24,138][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultScratchCard - VERSION: 1.2]
+[2012Jun28 09:28:24,185][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicios para consultar codigos de tarjetas prepago ]
+[2012Jun28 09:28:24,195][INFO ][1340891904194][doPost AutenticadorServlet.java:70][Autenticacion de usuario]
+[2012Jun28 09:28:24,207][INFO ][1340891904194][doPost AutenticadorServlet.java:80][El usuario autenticado es: jderci]
+[2012Jun28 09:28:25,433][DEBUG][1340891904194][doPost AutenticadorServlet.java:90][Usuario valido]
+[2012Jun28 09:28:25,437][DEBUG][1340891904194][doPost AutenticadorServlet.java:95][Luego de obtener la sesion]
+[2012Jun28 09:28:25,441][DEBUG][1340891904194][doPost AutenticadorServlet.java:100][Luego del dispatcher]
+[2012Jun28 09:28:25,591][DEBUG][1340891904194][doPost AutenticadorServlet.java:105][Luego del forward]
+[2012Jun28 09:36:59,903][DEBUG][][init BuscarScratchServlet.java:495][Metodo de inicializacion]
+[2012Jun28 09:37:00,976][DEBUG][][init BuscarScratchServlet.java:495][Metodo de inicializacion]
+[2012Jun28 09:37:00,981][DEBUG][][doPost BuscarScratchServlet.java:137][Inicio del TRY]
+[2012Jun28 09:37:00,986][DEBUG][][doPost BuscarScratchServlet.java:146][Consultando en CCWS]
+[2012Jun28 09:37:00,989][INFO ][][doPost BuscarScratchServlet.java:147][Verificando información en CCWS]
+[2012Jun28 09:37:01,188][DEBUG][][executeDelegator RcHelperScratch.java:39][Se procede a instanciar a RTBSRetrieveVoucherByBatchSerialDelegator]
+[2012Jun28 09:37:01,273][DEBUG][][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18740246" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>${user}</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">${password}</wsse:Password>
+            <wsse:Nonce>H4Lae6I7Tpv0IcmaLjCb2w==</wsse:Nonce>
+            <wsu:Created>${date}</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveVoucherByBatchSerial>
+         <ccws:batchNumber>${batch}</ccws:batchNumber>
+         <ccws:serialNumber>${serial}</ccws:serialNumber>
+      </ccws:RetrieveVoucherByBatchSerial>
+   </soapenv:Body>
+</soapenv:Envelope>
+]
+[2012Jun28 09:37:01,278][DEBUG][][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18740246" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>]
+[2012Jun28 09:37:01,284][DEBUG][][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: user]
+[2012Jun28 09:37:01,289][DEBUG][][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">]
+[2012Jun28 09:37:01,293][DEBUG][][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: password]
+[2012Jun28 09:37:01,297][DEBUG][][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Password>
+            <wsse:Nonce>H4Lae6I7Tpv0IcmaLjCb2w==</wsse:Nonce>
+            <wsu:Created>]
+[2012Jun28 09:37:01,301][DEBUG][][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: date]
+[2012Jun28 09:37:01,305][DEBUG][][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveVoucherByBatchSerial>
+         <ccws:batchNumber>]
+[2012Jun28 09:37:01,309][DEBUG][][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: batch]
+[2012Jun28 09:37:01,313][DEBUG][][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:batchNumber>
+         <ccws:serialNumber>]
+[2012Jun28 09:37:01,317][DEBUG][][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: serial]
+[2012Jun28 09:37:01,321][DEBUG][][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:serialNumber>
+      </ccws:RetrieveVoucherByBatchSerial>
+   </soapenv:Body>
+</soapenv:Envelope>
+]
+[2012Jun28 09:37:02,241][DEBUG][][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2012Jun28 09:37:02,247][DEBUG][][buildSOAPBody RTBSRetrieveVoucherByBatchSerialDelegator.java:209][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18740246" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">1W3008prep</wsse:Password>
+            <wsse:Nonce>H4Lae6I7Tpv0IcmaLjCb2w==</wsse:Nonce>
+            <wsu:Created>2012-06-28T09:37:02.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveVoucherByBatchSerial>
+         <ccws:batchNumber>4895</ccws:batchNumber>
+         <ccws:serialNumber>288510</ccws:serialNumber>
+      </ccws:RetrieveVoucherByBatchSerial>
+   </soapenv:Body>
+</soapenv:Envelope>
+]
+[2012Jun28 09:37:02,731][DEBUG][][execute RTBSRetrieveVoucherByBatchSerialDelegator.java:155][str: org.apache.commons.httpclient.methods.StringRequestEntity@1f0bdaf]
+[2012Jun28 09:37:03,660][DEBUG][][execute RTBSRetrieveVoucherByBatchSerialDelegator.java:173][StatusCode: OK]
+[2012Jun28 09:37:03,735][DEBUG][][processRequest RcControllerScratch.java:72][returnValue: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Proceso completado satisfactoriamente | info:  | vto: {}}]
+[2012Jun28 09:37:03,739][DEBUG][][doPost BuscarScratchServlet.java:152][respuesta.get(State).toString(): ]
+[2012Jun28 09:37:03,743][DEBUG][][doPost BuscarScratchServlet.java:200][El scratch 4895288510 no se encuentra registrado en CCWS, se procede a realizar la busqueda en RIBD]
+[2012Jun28 09:37:04,057][ERROR][][doPost BuscarScratchServlet.java:459][Error de tipo Exception]
+javax.naming.NameNotFoundException: Unable to resolve 'jdbc.datasource.csc' Resolved jdbc.datasource [Root exception is javax.naming.NameNotFoundException: Unable to resolve 'jdbc.datasource.csc' Resolved jdbc.datasource]; remaining name 'csc'
+	at weblogic.rjvm.BasicOutboundRequest.sendReceive(BasicOutboundRequest.java:108)
+	at weblogic.rmi.cluster.ReplicaAwareRemoteRef.invoke(ReplicaAwareRemoteRef.java:290)
+	at weblogic.rmi.cluster.ReplicaAwareRemoteRef.invoke(ReplicaAwareRemoteRef.java:248)
+	at weblogic.jndi.internal.ServerNamingNode_816_WLStub.lookup(Unknown Source)
+	at weblogic.jndi.internal.WLContextImpl.lookup(WLContextImpl.java:375)
+	at weblogic.jndi.internal.WLContextImpl.lookup(WLContextImpl.java:363)
+	at javax.naming.InitialContext.lookup(InitialContext.java:347)
+	at ve.com.digitel.scratch.servlet.BuscarScratchServlet.doPost(BuscarScratchServlet.java:208)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1077)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:7047)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3902)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2773)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+Caused by: javax.naming.NameNotFoundException: Unable to resolve 'jdbc.datasource.csc' Resolved jdbc.datasource
+	at weblogic.jndi.internal.BasicNamingNode.newNameNotFoundException(BasicNamingNode.java:897)
+	at weblogic.jndi.internal.BasicNamingNode.lookupHere(BasicNamingNode.java:230)
+	at weblogic.jndi.internal.ServerNamingNode.lookupHere(ServerNamingNode.java:154)
+	at weblogic.jndi.internal.BasicNamingNode.lookup(BasicNamingNode.java:188)
+	at weblogic.jndi.internal.BasicNamingNode.lookup(BasicNamingNode.java:196)
+	at weblogic.jndi.internal.BasicNamingNode.lookup(BasicNamingNode.java:196)
+	at weblogic.jndi.internal.RootNamingNode_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+	at weblogic.rmi.cluster.ReplicaAwareServerRef.invoke(ReplicaAwareServerRef.java:108)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)
+[2012Jun28 09:38:55,113][INFO ][1340892535113][doPost AutenticadorServlet.java:70][Autenticacion de usuario]
+[2012Jun28 09:38:55,117][INFO ][1340892535113][doPost AutenticadorServlet.java:80][El usuario autenticado es: jderci]
+[2012Jun28 09:38:55,165][DEBUG][1340892535113][doPost AutenticadorServlet.java:90][Usuario valido]
+[2012Jun28 09:38:55,168][DEBUG][1340892535113][doPost AutenticadorServlet.java:95][Luego de obtener la sesion]
+[2012Jun28 09:38:55,171][DEBUG][1340892535113][doPost AutenticadorServlet.java:100][Luego del dispatcher]
+[2012Jun28 09:38:55,177][DEBUG][1340892535113][doPost AutenticadorServlet.java:105][Luego del forward]
+[2012Jun28 09:39:08,297][DEBUG][1340892535113][doPost BuscarScratchServlet.java:137][Inicio del TRY]
+[2012Jun28 09:39:08,301][DEBUG][1340892535113][doPost BuscarScratchServlet.java:146][Consultando en CCWS]
+[2012Jun28 09:39:08,305][INFO ][1340892535113][doPost BuscarScratchServlet.java:147][Verificando información en CCWS]
+[2012Jun28 09:39:08,326][DEBUG][1340892535113][executeDelegator RcHelperScratch.java:39][Se procede a instanciar a RTBSRetrieveVoucherByBatchSerialDelegator]
+[2012Jun28 09:39:08,331][DEBUG][1340892535113][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2012Jun28 09:39:08,335][DEBUG][1340892535113][buildSOAPBody RTBSRetrieveVoucherByBatchSerialDelegator.java:209][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18740246" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">1W3008prep</wsse:Password>
+            <wsse:Nonce>H4Lae6I7Tpv0IcmaLjCb2w==</wsse:Nonce>
+            <wsu:Created>2012-06-28T09:39:08.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveVoucherByBatchSerial>
+         <ccws:batchNumber>4509</ccws:batchNumber>
+         <ccws:serialNumber>100186</ccws:serialNumber>
+      </ccws:RetrieveVoucherByBatchSerial>
+   </soapenv:Body>
+</soapenv:Envelope>
+]
+[2012Jun28 09:39:08,340][DEBUG][1340892535113][execute RTBSRetrieveVoucherByBatchSerialDelegator.java:155][str: org.apache.commons.httpclient.methods.StringRequestEntity@2ff768]
+[2012Jun28 09:39:08,613][DEBUG][1340892535113][execute RTBSRetrieveVoucherByBatchSerialDelegator.java:173][StatusCode: OK]
+[2012Jun28 09:39:08,670][DEBUG][1340892535113][processRequest RcControllerScratch.java:72][returnValue: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Proceso completado satisfactoriamente | info:  | vto: {}}]
+[2012Jun28 09:39:08,674][DEBUG][1340892535113][doPost BuscarScratchServlet.java:152][respuesta.get(State).toString(): ]
+[2012Jun28 09:39:08,677][DEBUG][1340892535113][doPost BuscarScratchServlet.java:200][El scratch 4509100186 no se encuentra registrado en CCWS, se procede a realizar la busqueda en RIBD]
+[2012Jun28 09:39:08,692][ERROR][1340892535113][doPost BuscarScratchServlet.java:459][Error de tipo Exception]
+javax.naming.NameNotFoundException: Unable to resolve 'jdbc.datasource.csc' Resolved jdbc.datasource [Root exception is javax.naming.NameNotFoundException: Unable to resolve 'jdbc.datasource.csc' Resolved jdbc.datasource]; remaining name 'csc'
+	at weblogic.rjvm.BasicOutboundRequest.sendReceive(BasicOutboundRequest.java:108)
+	at weblogic.rmi.cluster.ReplicaAwareRemoteRef.invoke(ReplicaAwareRemoteRef.java:290)
+	at weblogic.rmi.cluster.ReplicaAwareRemoteRef.invoke(ReplicaAwareRemoteRef.java:248)
+	at weblogic.jndi.internal.ServerNamingNode_816_WLStub.lookup(Unknown Source)
+	at weblogic.jndi.internal.WLContextImpl.lookup(WLContextImpl.java:375)
+	at weblogic.jndi.internal.WLContextImpl.lookup(WLContextImpl.java:363)
+	at javax.naming.InitialContext.lookup(InitialContext.java:347)
+	at ve.com.digitel.scratch.servlet.BuscarScratchServlet.doPost(BuscarScratchServlet.java:208)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1077)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:7047)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3902)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2773)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+Caused by: javax.naming.NameNotFoundException: Unable to resolve 'jdbc.datasource.csc' Resolved jdbc.datasource
+	at weblogic.jndi.internal.BasicNamingNode.newNameNotFoundException(BasicNamingNode.java:897)
+	at weblogic.jndi.internal.BasicNamingNode.lookupHere(BasicNamingNode.java:230)
+	at weblogic.jndi.internal.ServerNamingNode.lookupHere(ServerNamingNode.java:154)
+	at weblogic.jndi.internal.BasicNamingNode.lookup(BasicNamingNode.java:188)
+	at weblogic.jndi.internal.BasicNamingNode.lookup(BasicNamingNode.java:196)
+	at weblogic.jndi.internal.BasicNamingNode.lookup(BasicNamingNode.java:196)
+	at weblogic.jndi.internal.RootNamingNode_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+	at weblogic.rmi.cluster.ReplicaAwareServerRef.invoke(ReplicaAwareServerRef.java:108)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)
+[2012Jun28 09:44:03,166][INFO ][1340892843166][doPost AutenticadorServlet.java:70][Autenticacion de usuario]
+[2012Jun28 09:44:03,170][INFO ][1340892843166][doPost AutenticadorServlet.java:80][El usuario autenticado es: jderci]
+[2012Jun28 09:44:03,209][DEBUG][1340892843166][doPost AutenticadorServlet.java:90][Usuario valido]
+[2012Jun28 09:44:03,212][DEBUG][1340892843166][doPost AutenticadorServlet.java:95][Luego de obtener la sesion]
+[2012Jun28 09:44:03,215][DEBUG][1340892843166][doPost AutenticadorServlet.java:100][Luego del dispatcher]
+[2012Jun28 09:44:03,220][DEBUG][1340892843166][doPost AutenticadorServlet.java:105][Luego del forward]
+[2012Jun28 09:44:13,742][DEBUG][1340892843166][doPost BuscarScratchServlet.java:137][Inicio del TRY]
+[2012Jun28 09:44:13,746][DEBUG][1340892843166][doPost BuscarScratchServlet.java:146][Consultando en CCWS]
+[2012Jun28 09:44:13,749][INFO ][1340892843166][doPost BuscarScratchServlet.java:147][Verificando información en CCWS]
+[2012Jun28 09:44:13,752][DEBUG][1340892843166][executeDelegator RcHelperScratch.java:39][Se procede a instanciar a RTBSRetrieveVoucherByBatchSerialDelegator]
+[2012Jun28 09:44:13,756][DEBUG][1340892843166][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2012Jun28 09:44:13,760][DEBUG][1340892843166][buildSOAPBody RTBSRetrieveVoucherByBatchSerialDelegator.java:209][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18740246" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">1W3008prep</wsse:Password>
+            <wsse:Nonce>H4Lae6I7Tpv0IcmaLjCb2w==</wsse:Nonce>
+            <wsu:Created>2012-06-28T09:44:13.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveVoucherByBatchSerial>
+         <ccws:batchNumber>4509</ccws:batchNumber>
+         <ccws:serialNumber>100186</ccws:serialNumber>
+      </ccws:RetrieveVoucherByBatchSerial>
+   </soapenv:Body>
+</soapenv:Envelope>
+]
+[2012Jun28 09:44:13,765][DEBUG][1340892843166][execute RTBSRetrieveVoucherByBatchSerialDelegator.java:155][str: org.apache.commons.httpclient.methods.StringRequestEntity@57efeb]
+[2012Jun28 09:44:17,046][DEBUG][1340892843166][execute RTBSRetrieveVoucherByBatchSerialDelegator.java:173][StatusCode: OK]
+[2012Jun28 09:44:17,102][DEBUG][1340892843166][processRequest RcControllerScratch.java:72][returnValue: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Proceso completado satisfactoriamente | info:  | vto: {}}]
+[2012Jun28 09:44:17,105][DEBUG][1340892843166][doPost BuscarScratchServlet.java:152][respuesta.get(State).toString(): ]
+[2012Jun28 09:44:17,108][DEBUG][1340892843166][doPost BuscarScratchServlet.java:200][El scratch 4509100186 no se encuentra registrado en CCWS, se procede a realizar la busqueda en RIBD]
+[2012Jun28 09:44:17,122][ERROR][1340892843166][doPost BuscarScratchServlet.java:459][Error de tipo Exception]
+javax.naming.NameNotFoundException: Unable to resolve 'jdbc.datasource.csc' Resolved jdbc.datasource [Root exception is javax.naming.NameNotFoundException: Unable to resolve 'jdbc.datasource.csc' Resolved jdbc.datasource]; remaining name 'csc'
+	at weblogic.rjvm.BasicOutboundRequest.sendReceive(BasicOutboundRequest.java:108)
+	at weblogic.rmi.cluster.ReplicaAwareRemoteRef.invoke(ReplicaAwareRemoteRef.java:290)
+	at weblogic.rmi.cluster.ReplicaAwareRemoteRef.invoke(ReplicaAwareRemoteRef.java:248)
+	at weblogic.jndi.internal.ServerNamingNode_816_WLStub.lookup(Unknown Source)
+	at weblogic.jndi.internal.WLContextImpl.lookup(WLContextImpl.java:375)
+	at weblogic.jndi.internal.WLContextImpl.lookup(WLContextImpl.java:363)
+	at javax.naming.InitialContext.lookup(InitialContext.java:347)
+	at ve.com.digitel.scratch.servlet.BuscarScratchServlet.doPost(BuscarScratchServlet.java:208)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1077)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:7047)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3902)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2773)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+Caused by: javax.naming.NameNotFoundException: Unable to resolve 'jdbc.datasource.csc' Resolved jdbc.datasource
+	at weblogic.jndi.internal.BasicNamingNode.newNameNotFoundException(BasicNamingNode.java:897)
+	at weblogic.jndi.internal.BasicNamingNode.lookupHere(BasicNamingNode.java:230)
+	at weblogic.jndi.internal.ServerNamingNode.lookupHere(ServerNamingNode.java:154)
+	at weblogic.jndi.internal.BasicNamingNode.lookup(BasicNamingNode.java:188)
+	at weblogic.jndi.internal.BasicNamingNode.lookup(BasicNamingNode.java:196)
+	at weblogic.jndi.internal.BasicNamingNode.lookup(BasicNamingNode.java:196)
+	at weblogic.jndi.internal.RootNamingNode_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+	at weblogic.rmi.cluster.ReplicaAwareServerRef.invoke(ReplicaAwareServerRef.java:108)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)
+[2012Jun28 09:45:55,766][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultScratchCard - VERSION: 1.2]
+[2012Jun28 09:45:56,652][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicios para consultar codigos de tarjetas prepago ]
+[2012Jun28 09:45:56,661][INFO ][1340892956660][doPost AutenticadorServlet.java:70][Autenticacion de usuario]
+[2012Jun28 09:45:56,954][INFO ][1340892956660][doPost AutenticadorServlet.java:80][El usuario autenticado es: jderci]
+[2012Jun28 09:45:58,581][DEBUG][1340892956660][doPost AutenticadorServlet.java:90][Usuario valido]
+[2012Jun28 09:45:58,586][DEBUG][1340892956660][doPost AutenticadorServlet.java:95][Luego de obtener la sesion]
+[2012Jun28 09:45:58,590][DEBUG][1340892956660][doPost AutenticadorServlet.java:100][Luego del dispatcher]
+[2012Jun28 09:46:00,477][DEBUG][1340892956660][doPost AutenticadorServlet.java:105][Luego del forward]
+[2012Jun28 09:46:05,969][INFO ][1340892965969][doPost AutenticadorServlet.java:70][Autenticacion de usuario]
+[2012Jun28 09:46:05,973][INFO ][1340892965969][doPost AutenticadorServlet.java:80][El usuario autenticado es: jderci]
+[2012Jun28 09:46:06,023][DEBUG][1340892965969][doPost AutenticadorServlet.java:90][Usuario valido]
+[2012Jun28 09:46:06,027][DEBUG][1340892965969][doPost AutenticadorServlet.java:95][Luego de obtener la sesion]
+[2012Jun28 09:46:06,031][DEBUG][1340892965969][doPost AutenticadorServlet.java:100][Luego del dispatcher]
+[2012Jun28 09:46:06,037][DEBUG][1340892965969][doPost AutenticadorServlet.java:105][Luego del forward]
+[2012Jun28 09:46:19,604][DEBUG][1340892965969][init BuscarScratchServlet.java:495][Metodo de inicializacion]
+[2012Jun28 09:46:19,613][DEBUG][1340892965969][init BuscarScratchServlet.java:495][Metodo de inicializacion]
+[2012Jun28 09:46:19,619][DEBUG][1340892965969][doPost BuscarScratchServlet.java:137][Inicio del TRY]
+[2012Jun28 09:46:19,623][DEBUG][1340892965969][doPost BuscarScratchServlet.java:146][Consultando en CCWS]
+[2012Jun28 09:46:19,626][INFO ][1340892965969][doPost BuscarScratchServlet.java:147][Verificando información en CCWS]
+[2012Jun28 09:46:19,674][DEBUG][1340892965969][executeDelegator RcHelperScratch.java:39][Se procede a instanciar a RTBSRetrieveVoucherByBatchSerialDelegator]
+[2012Jun28 09:46:19,724][DEBUG][1340892965969][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18740246" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>${user}</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">${password}</wsse:Password>
+            <wsse:Nonce>H4Lae6I7Tpv0IcmaLjCb2w==</wsse:Nonce>
+            <wsu:Created>${date}</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveVoucherByBatchSerial>
+         <ccws:batchNumber>${batch}</ccws:batchNumber>
+         <ccws:serialNumber>${serial}</ccws:serialNumber>
+      </ccws:RetrieveVoucherByBatchSerial>
+   </soapenv:Body>
+</soapenv:Envelope>
+]
+[2012Jun28 09:46:19,729][DEBUG][1340892965969][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18740246" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>]
+[2012Jun28 09:46:19,735][DEBUG][1340892965969][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: user]
+[2012Jun28 09:46:19,740][DEBUG][1340892965969][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">]
+[2012Jun28 09:46:19,744][DEBUG][1340892965969][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: password]
+[2012Jun28 09:46:19,748][DEBUG][1340892965969][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Password>
+            <wsse:Nonce>H4Lae6I7Tpv0IcmaLjCb2w==</wsse:Nonce>
+            <wsu:Created>]
+[2012Jun28 09:46:19,752][DEBUG][1340892965969][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: date]
+[2012Jun28 09:46:19,757][DEBUG][1340892965969][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveVoucherByBatchSerial>
+         <ccws:batchNumber>]
+[2012Jun28 09:46:19,761][DEBUG][1340892965969][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: batch]
+[2012Jun28 09:46:19,765][DEBUG][1340892965969][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:batchNumber>
+         <ccws:serialNumber>]
+[2012Jun28 09:46:19,770][DEBUG][1340892965969][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: serial]
+[2012Jun28 09:46:19,774][DEBUG][1340892965969][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:serialNumber>
+      </ccws:RetrieveVoucherByBatchSerial>
+   </soapenv:Body>
+</soapenv:Envelope>
+]
+[2012Jun28 09:46:20,489][DEBUG][1340892965969][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2012Jun28 09:46:20,494][DEBUG][1340892965969][buildSOAPBody RTBSRetrieveVoucherByBatchSerialDelegator.java:209][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18740246" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">1W3008prep</wsse:Password>
+            <wsse:Nonce>H4Lae6I7Tpv0IcmaLjCb2w==</wsse:Nonce>
+            <wsu:Created>2012-06-28T09:46:20.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveVoucherByBatchSerial>
+         <ccws:batchNumber>4509</ccws:batchNumber>
+         <ccws:serialNumber>100186</ccws:serialNumber>
+      </ccws:RetrieveVoucherByBatchSerial>
+   </soapenv:Body>
+</soapenv:Envelope>
+]
+[2012Jun28 09:46:20,954][DEBUG][1340892965969][execute RTBSRetrieveVoucherByBatchSerialDelegator.java:155][str: org.apache.commons.httpclient.methods.StringRequestEntity@1ed00bc]
+[2012Jun28 09:46:21,639][DEBUG][1340892965969][execute RTBSRetrieveVoucherByBatchSerialDelegator.java:173][StatusCode: OK]
+[2012Jun28 09:46:21,713][DEBUG][1340892965969][processRequest RcControllerScratch.java:72][returnValue: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Proceso completado satisfactoriamente | info:  | vto: {}}]
+[2012Jun28 09:46:21,718][DEBUG][1340892965969][doPost BuscarScratchServlet.java:152][respuesta.get(State).toString(): ]
+[2012Jun28 09:46:21,721][DEBUG][1340892965969][doPost BuscarScratchServlet.java:200][El scratch 4509100186 no se encuentra registrado en CCWS, se procede a realizar la busqueda en RIBD]
+[2012Jun28 09:46:21,859][ERROR][1340892965969][doPost BuscarScratchServlet.java:459][Error de tipo Exception]
+javax.naming.NameNotFoundException: Unable to resolve 'jdbc.datasource.csc' Resolved jdbc.datasource [Root exception is javax.naming.NameNotFoundException: Unable to resolve 'jdbc.datasource.csc' Resolved jdbc.datasource]; remaining name 'csc'
+	at weblogic.rjvm.BasicOutboundRequest.sendReceive(BasicOutboundRequest.java:108)
+	at weblogic.rmi.cluster.ReplicaAwareRemoteRef.invoke(ReplicaAwareRemoteRef.java:290)
+	at weblogic.rmi.cluster.ReplicaAwareRemoteRef.invoke(ReplicaAwareRemoteRef.java:248)
+	at weblogic.jndi.internal.ServerNamingNode_816_WLStub.lookup(Unknown Source)
+	at weblogic.jndi.internal.WLContextImpl.lookup(WLContextImpl.java:375)
+	at weblogic.jndi.internal.WLContextImpl.lookup(WLContextImpl.java:363)
+	at javax.naming.InitialContext.lookup(InitialContext.java:347)
+	at ve.com.digitel.scratch.servlet.BuscarScratchServlet.doPost(BuscarScratchServlet.java:208)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:760)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:853)
+	at weblogic.servlet.internal.ServletStubImpl$ServletInvocationAction.run(ServletStubImpl.java:1077)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:465)
+	at weblogic.servlet.internal.ServletStubImpl.invokeServlet(ServletStubImpl.java:348)
+	at weblogic.servlet.internal.WebAppServletContext$ServletInvocationAction.run(WebAppServletContext.java:7047)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:321)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:121)
+	at weblogic.servlet.internal.WebAppServletContext.invokeServlet(WebAppServletContext.java:3902)
+	at weblogic.servlet.internal.ServletRequestImpl.execute(ServletRequestImpl.java:2773)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:224)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:183)
+Caused by: javax.naming.NameNotFoundException: Unable to resolve 'jdbc.datasource.csc' Resolved jdbc.datasource
+	at weblogic.jndi.internal.BasicNamingNode.newNameNotFoundException(BasicNamingNode.java:897)
+	at weblogic.jndi.internal.BasicNamingNode.lookupHere(BasicNamingNode.java:230)
+	at weblogic.jndi.internal.ServerNamingNode.lookupHere(ServerNamingNode.java:154)
+	at weblogic.jndi.internal.BasicNamingNode.lookup(BasicNamingNode.java:188)
+	at weblogic.jndi.internal.BasicNamingNode.lookup(BasicNamingNode.java:196)
+	at weblogic.jndi.internal.BasicNamingNode.lookup(BasicNamingNode.java:196)
+	at weblogic.jndi.internal.RootNamingNode_WLSkel.invoke(Unknown Source)
+	at weblogic.rmi.internal.BasicServerRef.invoke(BasicServerRef.java:477)
+	at weblogic.rmi.cluster.ReplicaAwareServerRef.invoke(ReplicaAwareServerRef.java:108)
+	at weblogic.rmi.internal.BasicServerRef$1.run(BasicServerRef.java:420)
+	at weblogic.security.acl.internal.AuthenticatedSubject.doAs(AuthenticatedSubject.java:363)
+	at weblogic.security.service.SecurityManager.runAs(SecurityManager.java:147)
+	at weblogic.rmi.internal.BasicServerRef.handleRequest(BasicServerRef.java:415)
+	at weblogic.rmi.internal.BasicExecuteRequest.execute(BasicExecuteRequest.java:30)
+	at weblogic.kernel.ExecuteThread.execute(ExecuteThread.java:219)
+	at weblogic.kernel.ExecuteThread.run(ExecuteThread.java:178)
+[2012Jun28 09:50:09,821][INFO ][][configurarLogger BSSIntLogger.java:67][APLICACION: ConsultScratchCard - VERSION: 1.2]
+[2012Jun28 09:50:09,887][INFO ][][configurarLogger BSSIntLogger.java:69][DESCRIPCION: Servicios de Integracion - Servicios para consultar codigos de tarjetas prepago ]
+[2012Jun28 09:50:09,896][INFO ][1340893209896][doPost AutenticadorServlet.java:70][Autenticacion de usuario]
+[2012Jun28 09:50:09,908][INFO ][1340893209896][doPost AutenticadorServlet.java:80][El usuario autenticado es: jderci]
+[2012Jun28 09:50:11,174][DEBUG][1340893209896][doPost AutenticadorServlet.java:90][Usuario valido]
+[2012Jun28 09:50:11,178][DEBUG][1340893209896][doPost AutenticadorServlet.java:95][Luego de obtener la sesion]
+[2012Jun28 09:50:11,183][DEBUG][1340893209896][doPost AutenticadorServlet.java:100][Luego del dispatcher]
+[2012Jun28 09:50:11,314][DEBUG][1340893209896][doPost AutenticadorServlet.java:105][Luego del forward]
+[2012Jun28 09:50:14,493][DEBUG][1340893209896][init BuscarScratchServlet.java:495][Metodo de inicializacion]
+[2012Jun28 09:50:14,502][DEBUG][1340893209896][init BuscarScratchServlet.java:495][Metodo de inicializacion]
+[2012Jun28 09:50:14,506][DEBUG][1340893209896][doPost BuscarScratchServlet.java:137][Inicio del TRY]
+[2012Jun28 09:50:14,510][DEBUG][1340893209896][doPost BuscarScratchServlet.java:146][Consultando en CCWS]
+[2012Jun28 09:50:14,514][INFO ][1340893209896][doPost BuscarScratchServlet.java:147][Verificando información en CCWS]
+[2012Jun28 09:50:14,559][DEBUG][1340893209896][executeDelegator RcHelperScratch.java:39][Se procede a instanciar a RTBSRetrieveVoucherByBatchSerialDelegator]
+[2012Jun28 09:50:14,607][DEBUG][1340893209896][compileCmd NameSustitutionCmdAdapter.java:50][Iniciando proceso de compilacion de comando: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18740246" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>${user}</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">${password}</wsse:Password>
+            <wsse:Nonce>H4Lae6I7Tpv0IcmaLjCb2w==</wsse:Nonce>
+            <wsu:Created>${date}</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveVoucherByBatchSerial>
+         <ccws:batchNumber>${batch}</ccws:batchNumber>
+         <ccws:serialNumber>${serial}</ccws:serialNumber>
+      </ccws:RetrieveVoucherByBatchSerial>
+   </soapenv:Body>
+</soapenv:Envelope>
+]
+[2012Jun28 09:50:14,613][DEBUG][1340893209896][compileCmd NameSustitutionCmdAdapter.java:83][Componente CONSTANTE encontrado: <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18740246" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>]
+[2012Jun28 09:50:14,619][DEBUG][1340893209896][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: user]
+[2012Jun28 09:50:14,624][DEBUG][1340893209896][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">]
+[2012Jun28 09:50:14,628][DEBUG][1340893209896][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: password]
+[2012Jun28 09:50:14,632][DEBUG][1340893209896][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsse:Password>
+            <wsse:Nonce>H4Lae6I7Tpv0IcmaLjCb2w==</wsse:Nonce>
+            <wsu:Created>]
+[2012Jun28 09:50:14,636][DEBUG][1340893209896][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: date]
+[2012Jun28 09:50:14,641][DEBUG][1340893209896][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveVoucherByBatchSerial>
+         <ccws:batchNumber>]
+[2012Jun28 09:50:14,645][DEBUG][1340893209896][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: batch]
+[2012Jun28 09:50:14,650][DEBUG][1340893209896][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:batchNumber>
+         <ccws:serialNumber>]
+[2012Jun28 09:50:14,654][DEBUG][1340893209896][compileCmd NameSustitutionCmdAdapter.java:63][Componente VARIABLE encontrado: serial]
+[2012Jun28 09:50:14,658][DEBUG][1340893209896][compileCmd NameSustitutionCmdAdapter.java:74][Componente CONSTANTE encontrado: </ccws:serialNumber>
+      </ccws:RetrieveVoucherByBatchSerial>
+   </soapenv:Body>
+</soapenv:Envelope>
+]
+[2012Jun28 09:50:15,560][DEBUG][1340893209896][assembly NameSustitutionCmdAdapter.java:201][Ensamblando lista de COMPONENTES para la construccion del COMANDO]
+[2012Jun28 09:50:15,567][DEBUG][1340893209896][buildSOAPBody RTBSRetrieveVoucherByBatchSerialDelegator.java:209][Comando Ensamblado <soapenv:Envelope xmlns:ccws="http://comverse-in.com/prepaid/ccws" xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <wsse:Security soapenv:mustUnderstand="1" xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+         <wsse:UsernameToken wsu:Id="UsernameToken-18740246" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd">
+            <wsse:Username>mwprepaid</wsse:Username>
+            <wsse:Password Type="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-username-token-profile-1.0#PasswordText">digitel412</wsse:Password>
+            <wsse:Nonce>H4Lae6I7Tpv0IcmaLjCb2w==</wsse:Nonce>
+            <wsu:Created>2012-06-28T09:50:15.000Z</wsu:Created>
+         </wsse:UsernameToken>
+      </wsse:Security>
+      <ccws:VersionInfoHeader>
+         <!--Optional:-->
+         <ccws:ProductVersion>?</ccws:ProductVersion>
+         <!--Optional:-->
+         <ccws:CustomerVersion>?</ccws:CustomerVersion>
+      </ccws:VersionInfoHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <ccws:RetrieveVoucherByBatchSerial>
+         <ccws:batchNumber>4509</ccws:batchNumber>
+         <ccws:serialNumber>100186</ccws:serialNumber>
+      </ccws:RetrieveVoucherByBatchSerial>
+   </soapenv:Body>
+</soapenv:Envelope>
+]
+[2012Jun28 09:50:16,059][DEBUG][1340893209896][execute RTBSRetrieveVoucherByBatchSerialDelegator.java:155][str: org.apache.commons.httpclient.methods.StringRequestEntity@d001e]
+[2012Jun28 09:50:18,159][DEBUG][1340893209896][execute RTBSRetrieveVoucherByBatchSerialDelegator.java:173][StatusCode: OK]
+[2012Jun28 09:50:18,279][DEBUG][1340893209896][processRequest RcControllerScratch.java:72][returnValue: ve.com.digitel.bssint.ReturnValue{ | condCode: 0 | reasonCode: Proceso completado satisfactoriamente | info:  | vto: {}}]
+[2012Jun28 09:50:18,290][DEBUG][1340893209896][doPost BuscarScratchServlet.java:152][respuesta.get(State).toString(): Used]
+[2012Jun28 09:50:18,295][DEBUG][1340893209896][doPost BuscarScratchServlet.java:156][Entro al IF]
+[2012Jun28 09:50:18,310][INFO ][1340893209896][doPost BuscarScratchServlet.java:173][El codigo (Scratch) 4509100186 esta registrado en CCWS y fue quemado en el GSM: 584122691278 el dia: Wed Jun 06 14:52:09 VET 2012]
+[2012Jun28 09:50:18,498][DEBUG][1340893209896][doPost BuscarScratchServlet.java:192][Enviado request a Response.jsp]

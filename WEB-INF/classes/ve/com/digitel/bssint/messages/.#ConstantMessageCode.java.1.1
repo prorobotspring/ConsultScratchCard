@@ -1,0 +1,209 @@
+/**
+ * Creado el 14/01/2008
+ */
+package ve.com.digitel.bssint.messages;
+
+import java.util.HashMap;
+import java.util.Map;
+
+/**
+ * @author Diego Leal <br>
+ *         BSS - CC Areas Tecnicas - Integracion
+ * 
+ * Interfaz que contiene las constantes para los codigos de los mensajes de error
+ */
+public class ConstantMessageCode {
+
+	/* -------------- Error no categorizado -------------- */
+	/**
+	 * Error no categorizado "0001"
+	 */
+	public static final String UNDEFINED_ERROR = "0001";
+
+	/**
+	 * Ejecucion satisfactoria
+	 */
+	public static final String SUCCESS_CODE = "0";
+
+	/* -------------- Errores de tipo RuntimeException -------------- */
+	/**
+	 * ARITHMETIC_EXCEPTION = "1000";
+	 */
+	public static final String ARITHMETIC_EXCEPTION = "1000";
+
+	/**
+	 * ARRAY_STORE_EXCEPTION = "1001";
+	 */
+	public static final String ARRAY_STORE_EXCEPTION = "1001";
+
+	/**
+	 * CLASS_CAST_EXCEPTION = "1002";
+	 */
+	public static final String CLASS_CAST_EXCEPTION = "1002";
+
+	/**
+	 * NEGATIVE_ARRAY_SIZE_EXCEPTION = "1003";
+	 */
+	public static final String NEGATIVE_ARRAY_SIZE_EXCEPTION = "1003";
+
+	/**
+	 * NULL_POINTER_EXCEPTION = "1004";
+	 */
+	public static final String NULL_POINTER_EXCEPTION = "1004";
+
+	/**
+	 * NO_SUCH_ELEMENT_EXCEPTION = "1005";
+	 */
+	public static final String NO_SUCH_ELEMENT_EXCEPTION = "1005";
+
+	/**
+	 * INDEX_OUT_OF_BOUNDS_EXCEPTION = "1006";
+	 */
+	public static final String INDEX_OUT_OF_BOUNDS_EXCEPTION = "1006";
+
+	/**
+	 * ILLEGAL_ARGUMENT_EXCEPTION = "1007";
+	 */
+	public static final String ILLEGAL_ARGUMENT_EXCEPTION = "1007";
+
+	/**
+	 * RUNTIME_EXCEPTION = "1999";
+	 */
+	public static final String RUNTIME_EXCEPTION = "1999";
+
+	/* -------------- Errores de tipo Exception -------------- */
+	/**
+	 * SQL_EXCEPTION = "2000";
+	 */
+	public static final String SQL_EXCEPTION = "2000";
+
+	/**
+	 * IO_EXCEPTION = "2001";
+	 */
+	public static final String IO_EXCEPTION = "2001";
+
+	/**
+	 * CLASS_NOT_FOUND_EXCEPTION = "2002";
+	 */
+	public static final String CLASS_NOT_FOUND_EXCEPTION = "2002";
+
+	/**
+	 * INSTANTIATION_EXCEPTION = "2003";
+	 */
+	public static final String INSTANTIATION_EXCEPTION = "2003";
+
+	/**
+	 * NO_SUCH_METHOD__EXCEPTION = "2004";
+	 */
+	public static final String NO_SUCH_METHOD__EXCEPTION = "2004";
+	
+	/**
+	 * PARSER_CONF_EXCEPTION = "2005";
+	 */
+	public static final String PARSER_CONF_EXCEPTION = "2005";
+	
+	/**
+	 * SAX_EXCEPTION = "2006";
+	 */
+	public static final String SAX_EXCEPTION = "2006";
+	
+	/**
+	 * ILLEGAL_ACCESS_EXCEPTION = "2007";
+	 */
+	public static final String ILLEGAL_ACCESS_EXCEPTION = "2007";
+	
+	/**
+	 * SAX_EXCEPTION = "2008";
+	 */
+	public static final String JMS_EXCEPTION = "2008";
+	
+	/**
+	 * ILLEGAL_ACCESS_EXCEPTION = "2009";
+	 */
+	public static final String INTERRUPTED_EXCEPTION = "2009";
+	
+	/**
+	 * JDOM_EXCEPTION = "2010";
+	 */
+	public static final String JDOM_EXCEPTION = "2010";
+	
+	/**
+	 * JDOM_EXCEPTION = "2011";
+	 */
+	public static final String FILE_NOT_FOUND_EXCEPTION = "2011";
+	
+
+	/**
+	 * EXCEPTION = "2999";
+	 */
+	public static final String EXCEPTION = "2999";
+
+	/* -------------- Errores Propios de INVPN -------------- */
+
+	/**
+	 * Se va a tener en memoria la relacion de los codigos de error CAI y nuestro properties
+	 */
+	public static Map erroresCAI = new HashMap();
+
+	static {
+		erroresCAI.put("0", SUCCESS_CODE);
+		erroresCAI.put("3001", "3001");
+		erroresCAI.put("3002", "3002");
+		erroresCAI.put("3006", "3006");
+		erroresCAI.put("3007", "3007");
+		erroresCAI.put("3008", "3008");
+		erroresCAI.put("9331", "3010");
+		erroresCAI.put("9332", "3012");
+		erroresCAI.put("9333", "3014");
+		erroresCAI.put("9335", "3016");
+		erroresCAI.put("9336", "3018");
+		erroresCAI.put("9337", "3020");
+		erroresCAI.put("9338", "3022");
+		erroresCAI.put("9342", "3024");
+		erroresCAI.put("9343", "3026");
+		erroresCAI.put("9344", "3028");
+		erroresCAI.put("9346", "3030");
+		erroresCAI.put("9347", "3032");
+		erroresCAI.put("9348", "3034");
+		erroresCAI.put("9351", "3036");
+		erroresCAI.put("9352", "3038");
+		erroresCAI.put("9354", "3040");
+		erroresCAI.put("9355", "3042");
+		erroresCAI.put("9356", "3044");
+		erroresCAI.put("9357", "3046");
+		erroresCAI.put("9358", "3048");
+		erroresCAI.put("9359", "3050");
+		erroresCAI.put("9360", "3052");
+		erroresCAI.put("9361", "3054");
+		erroresCAI.put("9364", "3056");
+		erroresCAI.put("9367", "3058");
+		erroresCAI.put("9368", "3060");
+		erroresCAI.put("9369", "3062");
+		erroresCAI.put("9370", "3064");
+		erroresCAI.put("9372", "3066");
+		erroresCAI.put("9373", "3068");
+		erroresCAI.put("9374", "3070");
+		erroresCAI.put("9375", "3072");
+		erroresCAI.put("2001", "3074");
+		erroresCAI.put("2002", "3076");
+		erroresCAI.put("3078", "3078");
+		erroresCAI.put("NC", "3100");
+	}
+
+	public static Integer getErrorCodeCAI(String code) {
+
+		if (erroresCAI.containsKey(code))
+			return new Integer(erroresCAI.get(code).toString());
+		else
+			return new Integer(erroresCAI.get("NC").toString());
+
+	}
+
+	/* -------------- Errores propios de los Desarrollos -------------- */
+	/**
+	 * Codigo de error para el caso de recibir un parametro que no cumpla con el 
+	 * contrato definido para el requerimiento.
+	 */
+	String PARAMETRO_INVALIDO = "";
+
+}
